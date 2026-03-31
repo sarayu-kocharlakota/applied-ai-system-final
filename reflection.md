@@ -4,13 +4,11 @@
 
 **a. Initial design**
 
-- Briefly describe your initial UML design.
-- What classes did you include, and what responsibilities did you assign to each?
+My UML design contains four classes. The four classes are: Owner, Pet, Task, and Scheduler. The Owner class' responsibilty is to represent the person using the app and holds the app user's name, email, and a list of their pets. The Pet class represents an animal and holds its species, breed, name, and age. The Task class responsibilty is to hold a care activity such as a walk, medication, feeding, and keeps tabs of the due date, priority, and if it has been completed. The Scheduler class is the main function of the app. It handles every single task and can order them in terms of priority and identify conflicts in scheduling. 
 
 **b. Design changes**
 
-- Did your design change during implementation?
-- If yes, describe at least one change and why you made it.
+My design changed a bit during implemenation. After referring to AI and asking it if there were any potential missing relationships, I realized that Scheduler had no direct conenction to Owner. Therefore, I included an owners list to the Scheduler class. This way, it can keep note of the owners that are in the system. I made this change as now, it would be much more simpler to look up tasks by owner in the future. 
 
 ---
 
