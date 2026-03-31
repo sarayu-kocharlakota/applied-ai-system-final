@@ -42,6 +42,15 @@ pip install -r requirements.txt
 6. Connect your logic to the Streamlit UI in `app.py`.
 7. Refine UML so it matches what you actually built.
 
+## Features 
+1. Note down pets and owners
+2. Schedule any tasks for pet such as feedings, medications, and walks
+3. Sort tasks by priority or time
+4. Recurring daily/weekly tasks
+4. Filter tasks by pet or completion status
+5. Conflict detection warnings
+
+
 ## Smarter Scheduling 
 PawPal+ new features:
 1. Sort by time - tasks are ordered by due time, earliest first
@@ -63,3 +72,6 @@ Tests cover:
 5. Conflict detection
 
 Confidence Level: 5 stars
+
+## Demo
+<a href="/course_images/ai110/pawpal_screenshot.png" target="_blank"><img src='/course_images/ai110/pawpal_screenshot.png' title='PawPal App' width='' alt='PawPal App' class='center-block' /></a>
