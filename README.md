@@ -41,3 +41,12 @@ pip install -r requirements.txt
 5. Add tests to verify key behaviors.
 6. Connect your logic to the Streamlit UI in `app.py`.
 7. Refine UML so it matches what you actually built.
+
+## Smarter Scheduling 
+PawPal+ new features:
+1. Sort by time - tasks are ordered by due time, earliest first
+2. Sort by priority - tasks are ordered by priority level (1 = highest)
+3. Filter by pet - See tasks for a specific pet only
+4. Filter by status - See only incomplete or complete tasks
+5. Recurring tasks - Daily or weekly tasks automatically reschedule when marked as done
+6. Conflict detection - Gives warning when two tasks are scheduled at the same hour for the same pet
