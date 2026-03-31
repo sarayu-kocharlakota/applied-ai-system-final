@@ -47,8 +47,8 @@ pip install -r requirements.txt
 2. Schedule any tasks for pet such as feedings, medications, and walks
 3. Sort tasks by priority or time
 4. Recurring daily/weekly tasks
-4. Filter tasks by pet or completion status
-5. Conflict detection warnings
+5. Filter tasks by pet or completion status
+6. Conflict detection warnings
 
 
 ## Smarter Scheduling 
@@ -72,6 +72,12 @@ Tests cover:
 5. Conflict detection
 
 Confidence Level: 5 stars
+
+## How to Run
+Run the Streamlit App: streamlit run app.py
+Run the Demo Script: python3 main.py
+Run the Tests: python3 -m pytest
+
 
 ## Demo
 <a href="/pawpal_screenshot.png" target="_blank"><img src='pawpal_screenshot.png' title='PawPal App' width='' alt='PawPal App' class='center-block' /></a>

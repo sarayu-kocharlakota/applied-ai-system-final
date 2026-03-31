@@ -8,7 +8,7 @@ My UML design contains four classes. The four classes are: Owner, Pet, Task, and
 
 **b. Design changes**
 
-My design changed a bit during implemenation. After referring to AI and asking it if there were any potential missing relationships, I realized that Scheduler had no direct conenction to Owner. Therefore, I included an owners list to the Scheduler class. This way, it can keep note of the owners that are in the system. I made this change as now, it would be much more simpler to look up tasks by owner in the future. 
+My design changed a bit during implemenation. After referring to AI and asking it if there were any potential missing relationships, I realized that Scheduler had no direct connection to Owner. Therefore, I included an owners list to the Scheduler class. This way, it can keep note of the owners that are in the system. I made this change as now, it would be much more simpler to look up tasks by owner in the future. 
 
 ---
 
@@ -16,13 +16,9 @@ My design changed a bit during implemenation. After referring to AI and asking i
 
 **a. Constraints and priorities**
 
-- What constraints does your scheduler consider (for example: time, priority, preferences)?
-- How did you decide which constraints mattered most?
+The two constraints that my scheduler considers are time (the due date of a task) and priority (how important a task is, 1 being highest). I decided that these two constraints mattered the most as every task for a pet has a specific time it needs to get done. Furthermore, there will always be tasks that are more important to get done than others. 
 
 **b. Tradeoffs**
-
-- Describe one tradeoff your scheduler makes.
-- Why is that tradeoff reasonable for this scenario?
 
 One tradeoff my scheduler makes is that it only verifies for exact hour matches when analyzing conflicts. If there is one task at 8:00am and another at 8:30am, nothing gets flagged. However, if both tasks are at 8:00am, it gets flagged. This tradeoff is reasonable for this scenario as this is a straightforward and easy app for pet care. So, just checking hours works great. The most common timings for tasks for pets such as feedings or walks are scheduled on the hour. This covers frequently occuring cases which prevents the code from being overly complex. 
 
@@ -32,40 +28,34 @@ One tradeoff my scheduler makes is that it only verifies for exact hour matches 
 
 **a. How you used AI**
 
-- How did you use AI tools during this project (for example: design brainstorming, debugging, refactoring)?
-- What kinds of prompts or questions were most helpful?
+I used AI tools to help me generate the UML diagram, to help generate the skeleton code, implement the full classes, write tests, and to help solve the bug with the conflict detection. AI is so useful when wanting support in understanding specific parts of a code and debugging issues in the code. The prompts where I ask for guidance in these, are the most beneficial. 
 
 **b. Judgment and verification**
 
-- Describe one moment where you did not accept an AI suggestion as-is.
-- How did you evaluate or verify what the AI suggested?
-
+I didn't accept an AI suggestion as-is was when the conflict detection was not properly working. The initial code that the AI provided was not flagging conflicts when it was clearly supposed to. When I ran the script, the output kept displaying "No conflicts detected". This was when I knew that AI was giving me inaccurate suggestions, as there were clearly two tasks at the same exact hour. 
 ---
 
 ## 4. Testing and Verification
 
 **a. What you tested**
 
-- What behaviors did you test?
-- Why were these tests important?
+I tested these five behaviors: task completion status, adding tasks to pets, sorting tasks by time, recurring task logic, and conflict detection. These tests were very important as they confirmed that the main logic of the scheduler accurately worked before linking it to the UI. 
 
 **b. Confidence**
 
-- How confident are you that your scheduler works correctly?
-- What edge cases would you test next if you had more time?
-
+I am extremely confident that my scheduler works correctly. All five tests passed and everything ran properly with no errors. If given extra time, I would have tested edge cases such as a pet that has no tasks in a day and two different pets with a task at the same hour. 
 ---
 
 ## 5. Reflection
 
 **a. What went well**
 
-- What part of this project are you most satisfied with?
+The part that I am most satisfied with about this project is the UI working well and properly. 
 
 **b. What you would improve**
 
-- If you had another iteration, what would you improve or redesign?
+If I had another iteration, something I would improve is making the app look nicer. I definitely would have added some nice touches to make it look more appealing.   
 
 **c. Key takeaway**
 
-- What is one important thing you learned about designing systems or working with AI on this project?
+One important thing I learned about designing systems or working with AI on this project is that yes, of course AI can generate the code you want it to. However, what's more important is that you actually understand and verify it. I realized that although AI can give all the suggestions that it wants to give, it's up to us if we want to take them or not. 
