@@ -32,7 +32,7 @@ I used AI tools to help me generate the UML diagram, to help generate the skelet
 
 **b. Judgment and verification**
 
-I didn't accept an AI suggestion as-is was when the conflict detection was not properly working. The initial code that the AI provided was not flagging conflicts when it was clearly supposed to. When I ran the script, the output kept displaying "No conflicts detected". This was when I knew that AI was giving me inaccurate suggestions, as there were clearly two tasks at the same exact hour. 
+I didn't accept an AI suggestion as-is was when the conflict detection was not properly working. The initial code that the AI provided was not flagging conflicts when it was clearly supposed to. When I ran the script, the output kept displaying "No conflicts detected". This was when I knew that AI was giving me inaccurate suggestions, as there were clearly two tasks at the same exact hour. I used AI to help me fix this issue. We realized that the solution was to compare the hour values of the tasks, not the full date and time. I was able to run the script properly once making this change. 
 ---
 
 ## 4. Testing and Verification
