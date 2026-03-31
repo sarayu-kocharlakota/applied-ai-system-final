@@ -50,3 +50,16 @@ PawPal+ new features:
 4. Filter by status - See only incomplete or complete tasks
 5. Recurring tasks - Daily or weekly tasks automatically reschedule when marked as done
 6. Conflict detection - Gives warning when two tasks are scheduled at the same hour for the same pet
+
+## Testing PawPal+
+To run:
+-> python3 -m pytest
+
+Tests cover:
+1. Task completion status
+2. Adding tasks to pets
+3. Sorting tasks by time
+4. Recurring task logic
+5. Conflict detection
+
+Confidence Level: 5 stars
