@@ -74,9 +74,11 @@ Tests cover:
 Confidence Level: 5 stars
 
 ## How to Run
-Run the Streamlit App: streamlit run app.py
-Run the Demo Script: python3 main.py
-Run the Tests: python3 -m pytest
+Run the Streamlit App: 'streamlit run app.py'
+
+Run the Demo Script: 'python3 main.py'
+
+Run the Tests: 'python3 -m pytest'
 
 
 ## Demo
