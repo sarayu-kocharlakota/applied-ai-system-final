@@ -1,85 +1,34 @@
-# PawPal+ (Module 2 Project)
+## Title and Summary
+PawPal+ - Applied AI Pet Care System
 
-You are building **PawPal+**, a Streamlit app that helps a pet owner plan care tasks for their pet.
+The Applied AI Pawpal+ is a pet care app that helps busy owners stay on top of their pet's daily needs. It allows them to add tasks such as walks, medications, feedings, and then uses Claude AI to generate a smart daily schedule with explanations. This app is very beneficial because busy pet owners often struggle or forget to stay consistent with pet care. Having an AI generalized personal schedule saves so much time and helps owners provide the proper care that their pets require every day. 
 
-## Scenario
+This project is an extension of the original PawPal+ project from Module 3. The original app allowed pet owners to manually input tasks such as walks, medications, and feedings. It was able to sort tasks by time or priority, detect scheduling conflicts, and support recurring daily or weekly tasks. There was no AI involved at all. All of this was done by using rule-based logic. 
 
-A busy pet owner needs help staying consistent with pet care. They want an assistant that can:
+## Architecture Overview 
 
-- Track pet care tasks (walks, feeding, meds, enrichment, grooming, etc.)
-- Consider constraints (time available, priority, owner preferences)
-- Produce a daily plan and explain why it chose that plan
+First, the user enters pet tasks and information into the Streamlit app. The Scheduler then sorts the tasks and detects any conflicts. Next, the AI Scheduler sends those tasks to the Claude API, which returns an intelligent personalized plan which gets displayed back to the user in the app. 
 
-Your job is to design the system first (UML), then implement the logic in Python, then connect it to the Streamlit UI.
+![Architecture Diagram](assets/architecture.png)
 
-## What you will build
+## Setup Instruction
 
-Your final app should:
+1. Clone the repo - Download the project files to your computer
+2. Create and activate a virtual environment 
+3. Install dependencies - Installs Streamlit and Anthropic
+4. Set the API key - Get the key from console.anthropic.com
+5. Run the app - Start the Streamlit app and it opens in browser
 
-- Let a user enter basic owner + pet info
-- Let a user add/edit tasks (duration + priority at minimum)
-- Generate a daily schedule/plan based on constraints and priorities
-- Display the plan clearly (and ideally explain the reasoning)
-- Include tests for the most important scheduling behaviors
+## Sample Interactions
 
-## Getting started
+**Example 1**
+- Pet: Mochi (dog)
+- Tasks: Morning walk at 8am (priority 1), Feeding at 9am (priority 2), Medicine at 10am (priority 1)
+- AI Output: 
 
-### Setup
+**Example2**
+- Pet: Mochi (dog)
+- Tasks: Two walks scheduled at the same hour
+- AI Output: 
 
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### Suggested workflow
-
-1. Read the scenario carefully and identify requirements and edge cases.
-2. Draft a UML diagram (classes, attributes, methods, relationships).
-3. Convert UML into Python class stubs (no logic yet).
-4. Implement scheduling logic in small increments.
-5. Add tests to verify key behaviors.
-6. Connect your logic to the Streamlit UI in `app.py`.
-7. Refine UML so it matches what you actually built.
-
-## Features 
-1. Note down pets and owners
-2. Schedule any tasks for pet such as feedings, medications, and walks
-3. Sort tasks by priority or time
-4. Recurring daily/weekly tasks
-5. Filter tasks by pet or completion status
-6. Conflict detection warnings
-
-
-## Smarter Scheduling 
-PawPal+ new features:
-1. Sort by time - tasks are ordered by due time, earliest first
-2. Sort by priority - tasks are ordered by priority level (1 = highest)
-3. Filter by pet - See tasks for a specific pet only
-4. Filter by status - See only incomplete or complete tasks
-5. Recurring tasks - Daily or weekly tasks automatically reschedule when marked as done
-6. Conflict detection - Gives warning when two tasks are scheduled at the same hour for the same pet
-
-## Testing PawPal+
-To run:
--> python3 -m pytest
-
-Tests cover:
-1. Task completion status
-2. Adding tasks to pets
-3. Sorting tasks by time
-4. Recurring task logic
-5. Conflict detection
-
-Confidence Level: 5 stars
-
-## How to Run
-Run the Streamlit App: 'streamlit run app.py'
-
-Run the Demo Script: 'python3 main.py'
-
-Run the Tests: 'python3 -m pytest'
-
-
-## Demo
-<a href="/pawpal_screenshot.png" target="_blank"><img src='pawpal_screenshot.png' title='PawPal App' width='' alt='PawPal App' class='center-block' /></a>
+## Design Decisions
