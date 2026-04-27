@@ -81,3 +81,9 @@ def test_conflict_detection():
     scheduler.add_task(task2)
     conflicts = scheduler.detect_conflicts()
     assert len(conflicts) == 1
+
+def test_ai_scheduler_no_tasks():
+    """AI scheduler should handle empty task list gracefully."""
+    from ai_scheduler import generate_ai_schedule
+    result = generate_ai_schedule("Mochi", "dog", [])
+    assert "No tasks" in result

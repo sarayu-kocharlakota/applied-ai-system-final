@@ -87,3 +87,14 @@ with col2:
                 st.write(f"🐾 **{task.pet.name}** — {str(task)}")
         else:
             st.warning("No tasks yet!")
+st.divider()
+st.subheader("🤖 AI-Powered Schedule")
+
+if st.button("✨ Generate AI Schedule"):
+    with st.spinner("Asking Claude to plan your day..."):
+        from ai_scheduler import generate_ai_schedule
+        tasks = st.session_state.tasks
+        pet = st.session_state.pet
+        result = generate_ai_schedule(pet.name, pet.species, tasks)
+        st.success("Here's your AI-generated plan!")
+        st.markdown(result)
