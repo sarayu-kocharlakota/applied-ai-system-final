@@ -13,20 +13,25 @@ First, the user enters pet tasks and information into the Streamlit app. The Sch
 
 ## Setup Instruction
 1. Clone the repo - Download the project files to your computer
+
 git clone https://github.com/sarayu-kocharlakota/applied-ai-system-final.git
 cd applied-ai-system-final
 
 2. Create and activate a virtual environment 
+
 python3 -m venv .venv
 source .venv/bin/activate
 
 3. Install dependencies - Installs Streamlit and Anthropic
+
 pip install streamlit anthropic
 
 4. Set the API key - Get the key from console.anthropic.com
+
 export ANTHROPIC_API_KEY="your-api-key-here"
 
 5. Run the app - Start the Streamlit app and it opens in browser
+
 streamlit run app.py
 
 ## Sample Interactions
