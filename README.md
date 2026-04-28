@@ -40,3 +40,10 @@ All 6 out of 6 tests passed. The tests included task completion, sorting, confli
 
 ## Reflection 
 This project taught me a lot about AI usage. I learned that although AI can be of great support for projects like this, at the end of the day, it's up to me whether or not I should take its advice and suggestions. I also learned that AI works best only when I give it a clear and specific prompt, rather than a vague one. The biggest challenge I faced when creating this project was getting the anthropic module installed correctly and setting up the API key in the right terminal window every single time. AI helped me learn that errors are more than normal and it's just part of the process of creating something big in the end. It also taught me that certain tools need to be correctly set up in order to work, such as virtual environment and API key. 
+
+## Portfolio Reflection
+
+Creating this project was a great experience. I gained deep knowledge and experience on how to take a simple project and make it more advanced and smart with AI. The thing I felt was most interesting to learn was how to integrate real APIs into working apps. Furthermore, adding error handling so the app displays a kind message rather than crashing when something goes wrong. Also, adding logging allows one to see exactly what the app is doing while it runs. Adding all of these features made me a better AI engineer because I realized that building a proper app is not only about making it work, but also making it very reliable and trustworthy for people to use. I now understand how to integrate APIs, handle errors gracefully, and write tests to check if my code works. Building this app taught me how to expand my thinking beyond just functionality but also to think about considering what happens when things go wrong. 
+
+## GitHub Repository
+https://github.com/sarayu-kocharlakota/applied-ai-system-final
