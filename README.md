@@ -90,3 +90,6 @@ Creating this project was a great experience. I gained deep knowledge and experi
 
 ## GitHub Repository
 https://github.com/sarayu-kocharlakota/applied-ai-system-final
+
+## Demo Video
+[Click here to watch the demo walkthrough](https://www.loom.com/share/4562d19690a848c8b3b351e34634b931)
