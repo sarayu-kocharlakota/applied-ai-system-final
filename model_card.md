@@ -16,3 +16,6 @@ The biggest surprise to me when creating this project was how confusing the syst
 
 A very helpful moment when AI helped me out was when it provided guidance on how to structure the ai_scheduler.py file and suggesting how to handle errors so gracefully. One area where I felt there was a flawed moment was when AI kept giving me incorrect installation commands, which caused a "ModuleNotFoundError" that took so long to fix. 
 
+## Future Improvements
+
+In the future, I want to make this project more advanced so that it can handle multiple pets at once. I also want to add a confidence score so users are aware of how much they can trust Claude  about its suggestions. 
