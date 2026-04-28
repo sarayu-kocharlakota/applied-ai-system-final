@@ -8,7 +8,7 @@ Claude is only aware of the tasks you provide, it doesn't have real knowledge ab
 
 One could use this app to generate incorrect or harmful care schedule if they put in fake information. A method to prevent this, is the app could add input validation to verify that the tasks and corresponding times are realistic. Furthermore, this could include a disclaimer reminding users that AI suggestions are absolutely not a substitute for professional pet advice. 
 
-#$ Surprises During Testing
+## Surprises During Testing
 
 The biggest surprise to me when creating this project was how confusing the system was to setup issues. For example, something as simple as the API key not being set in the right terminal window which caused the entire AI feature to fail. It was also shocking to see Claude respond so accurately and straight to the point when given clear and specific task information. 
 
