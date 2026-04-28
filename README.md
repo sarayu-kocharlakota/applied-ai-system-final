@@ -12,12 +12,22 @@ First, the user enters pet tasks and information into the Streamlit app. The Sch
 ![Architecture Diagram](assets/architecture.png)
 
 ## Setup Instruction
-
 1. Clone the repo - Download the project files to your computer
+git clone https://github.com/sarayu-kocharlakota/applied-ai-system-final.git
+cd applied-ai-system-final
+
 2. Create and activate a virtual environment 
+python3 -m venv .venv
+source .venv/bin/activate
+
 3. Install dependencies - Installs Streamlit and Anthropic
+pip install streamlit anthropic
+
 4. Set the API key - Get the key from console.anthropic.com
+export ANTHROPIC_API_KEY="your-api-key-here"
+
 5. Run the app - Start the Streamlit app and it opens in browser
+streamlit run app.py
 
 ## Sample Interactions
 
@@ -25,11 +35,39 @@ First, the user enters pet tasks and information into the Streamlit app. The Sch
 - Pet: Mochi (dog)
 - Tasks: Morning walk at 8am (priority 1), Feeding at 9am (priority 2), Medicine at 10am (priority 1)
 - AI Output: 
+Mochi's Task Plan for Today 🐕
+Best Order to Complete Tasks
+Morning walk at 8:00 AM (Priority 1)
+Feeding at 9:00 AM (Priority 2)
+Medicine at 10:00 AM (Priority 1)
+Why this works: This order is already ideal! Walking first lets Mochi burn energy and go potty. Feeding after exercise (with a 1-hour gap) allows time for their heart rate to settle, reducing bloat risk. Medicine last ensures it can be given with or after food if needed for absorption or to prevent stomach upset.
+
+Potential Issues 🚩
+All clear! The 1-hour gaps between tasks are healthy spacing.
+Just confirm whether Mochi's medicine should be taken with food, after food, or on an empty stomach—adjust timing if needed.
+Bonus Wellbeing Tip 💡
+Since Mochi has medicine scheduled, offer a small treat or extra cuddles afterward as positive reinforcement! This helps reduce any stress around medication time and keeps the experience pleasant for future doses.
+
+Have a wonderful day with Mochi! 🐾
 
 **Example2**
-- Pet: Mochi (dog)
-- Tasks: Two walks scheduled at the same hour
+- Pet: Luna (cat)
+- Tasks: Two walks scheduled at the same hour being priorities 1 and 2.
 - AI Output: 
+Luna's Task Review 🐱
+1. Best Order for Tasks
+Since both tasks are scheduled at the same time (8:00 AM), I'd recommend completing the Morning walk first (priority 1), as it has the higher priority ranking.
+
+2. ⚠️ Potential Issues Flagged
+Scheduling conflict! Both walks are set for 8:00 AM — this appears to be a data entry error. You'll want to reschedule the "Afternoon walk" to an actual afternoon time (perhaps 2:00 PM or 4:00 PM).
+
+Cats and walks: Just a gentle note — most cats don't need walks like dogs do! If Luna is harness-trained and enjoys outdoor adventures, that's wonderful. But if not, you might consider replacing "walks" with play sessions instead.
+
+3. 🌟 Bonus Wellbeing Tip
+Give Luna some vertical space today! Cats love to climb and perch up high — it helps them feel safe and mentally stimulated. A cat tree, shelf, or even a cleared spot on a bookcase can make her day extra enriching.
+
+Would you like help adjusting Luna's schedule or converting these to indoor play activities? 🐾
+
 
 ## Design Decisions
 
